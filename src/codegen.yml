@@ -1,0 +1,8 @@
+schema: https://docs.github.com/en/graphql/overview/explorer
+documents: ./graphql/queries/*.graphql
+generates:
+  ./src/types.d.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+          
